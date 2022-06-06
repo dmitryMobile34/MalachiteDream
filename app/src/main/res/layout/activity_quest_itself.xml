@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mal_bg"
+    tools:context=".QuestItself">
+
+    <ImageView
+        android:id="@+id/ption"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="595dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/potion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wzrd"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="146dp"
+        android:src="@drawable/wizard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wall"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="117dp"
+        android:src="@drawable/brickwall"
+        app:layout_constraintBottom_toTopOf="@+id/ption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statBarWiz" />
+
+    <TextView
+        android:id="@+id/forScheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="score"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/wzrd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/statBarWiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="304dp"
+        android:fontFamily="@font/crbert"
+        android:text="You won't defeat me, weakling!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/ption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wzrd" />
+
+    <Button
+        android:id="@+id/tipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#DAD734"
+        android:fontFamily="@font/crbert"
+        android:text="Ask the sages"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/ption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wall" />
+</androidx.constraintlayout.widget.ConstraintLayout>

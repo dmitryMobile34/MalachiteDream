@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "19126783993",
+    "project_id": "malachite-dream",
+    "storage_bucket": "malachite-dream.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19126783993:android:8ef813f582cc089042f728",
+        "android_client_info": {
+          "package_name": "com.netmarble.mherosg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19126783993-7q0bmnb2rpavm7i1f7dbdang58j1fenj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvhuiUv34GETzI5FLdCWS6jRnhdEYLQMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19126783993-7q0bmnb2rpavm7i1f7dbdang58j1fenj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

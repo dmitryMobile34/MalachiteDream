@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mal_bg"
+    tools:context=".FinalAct">
+
+    <TextView
+        android:id="@+id/firstTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/crbert"
+        android:text="The wizard was defeated! But who knows for how long? Story goes, the wizard returns quite often"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/agBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/agBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="406dp"
+        android:onClick="again"
+        android:backgroundTint="#DAD734"
+        android:fontFamily="@font/crbert"
+        android:text="Try again!"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

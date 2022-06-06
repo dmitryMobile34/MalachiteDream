@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mal_bg"
+    tools:context=".GameplayItselfAct">
+
+    <TextView
+        android:id="@+id/firstTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="85dp"
+        android:fontFamily="@font/crbert"
+        android:text="Once in a long-long while, the great Malachite wizard emerges from the depths to cause havoc and destruction"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nxtBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nxtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="406dp"
+        android:onClick="showDownPart"
+        android:backgroundTint="#DAD734"
+        android:fontFamily="@font/crbert"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTxt" />
+
+    <TextView
+        android:id="@+id/secondTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="201dp"
+        android:fontFamily="@font/crbert"
+        android:text="You were chosen by the ancient sages to stop the wizard once and for all"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nxtBtn" />
+
+    <Button
+        android:id="@+id/takeQuestBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:onClick="moveToQuest"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#DAD734"
+        android:fontFamily="@font/crbert"
+        android:visibility="invisible"
+        android:text="Take on the quest"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
